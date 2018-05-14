@@ -91,7 +91,7 @@ bs_local_args = { 'key': '<browserstack-accesskey>', 'localIdentifier': 'randoms
 ## Additional Arguments
 
 #### Binary Path
- 
+
  By default, BrowserStack local wrappers try downloading and executing the latest version of BrowserStack binary in ~/.browserstack or the present working directory or the tmp folder by order. But you can override these by passing the -binarypath argument.
  Path to specify local Binary path -
  ```js
@@ -109,7 +109,7 @@ bs_local_args = { 'key': '<browserstack-accesskey>', 'verbose': 'true', 'logFile
 
 ### Instructions
 
-To run the test suite run, `npm test`.
+To run the test suite run, `npm test`. N.B. Tests require a connection to Browserstack. You will need to pass environment variable: `BROWSERSTACK_ACCESS_KEY=<your_access_key`
 
 ### Reporting bugs
 
@@ -126,4 +126,3 @@ We love pull requests! We are very happy to work with you to get your changes me
 * Adhere to the coding conventions you see in the surrounding code.
 * Include tests, and make sure all tests pass.
 * Before submitting a pull-request, clean up the git history by going over your commits and squashing together minor changes and fixes into the corresponding commits. You can do this using the interactive rebase command.
-
